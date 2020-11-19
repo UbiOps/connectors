@@ -1,0 +1,2 @@
+mysqlclient==1.4.6
+ubiops-connector==1.0.2

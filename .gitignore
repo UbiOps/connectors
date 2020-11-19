@@ -1,0 +1,12 @@
+.DS_Store
+.idea
+__pycache__
+*.egg-info
+*.pot
+*.py[co]
+.tox/
+MANIFEST
+venv/
+debug.log
+*.pyc
+*.pem
