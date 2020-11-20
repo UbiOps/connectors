@@ -75,7 +75,7 @@ class Deployment(OutputConnector):
             raise RecoverableConnectorError(f"Failed to insert data: {e}")
 
         except psycopg2.Error as e:
-            logger.error(f"Failed to insert data. Error Message: {e}")
+            self.connection = None
             raise ConnectorError(f"Failed to insert data: {e}")
 
         logger.info("Data inserted successfully")
