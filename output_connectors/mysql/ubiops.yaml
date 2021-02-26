@@ -1,0 +1,9 @@
+environment_variables:
+- ACCEPT_EULA=Y
+apt:
+  packages:
+    - build-essential
+    - python3-dev
+    - libpython3.7-dev
+    - libmysqlclient-dev
+    - unixodbc-dev

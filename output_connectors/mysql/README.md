@@ -6,10 +6,13 @@ to most major MySQL versions.
 
 ## Configuration
 
-The MySQL output connector works with Python 3.6 or higher, and should be set up as a deployment with structured
-input. Each of the input fields corresponds to a field in the database used for inserting. The output type does not
-matter, as no output is returned from the connector. We recommend to allocate at least 512 MB of memory to the
-deployment.
+The MySQL output connector works with Python 3.6. Using a different version of Python requires changing `python3.6-dev`
+in ubiops.yaml to another version of Python.
+
+
+The connector should be set up as a deployment with structured input. Each of the input fields corresponds to a field
+in the database used for inserting. The output type does not matter, as no output is returned from the connector. 
+We recommend to allocate at least 512 MB of memory to the deployment.
   
 The connector can be configured using the following environment variables:
 
