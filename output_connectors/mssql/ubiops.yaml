@@ -1,0 +1,14 @@
+environment_variables:
+- ACCEPT_EULA=Y
+apt:
+  keys:
+    urls:
+      - https://packages.microsoft.com/keys/microsoft.asc
+  sources:
+    items:
+      - "deb [arch=amd64] https://packages.microsoft.com/ubuntu/20.04/prod focal main"
+  packages:
+    - python3-dev
+    - build-essential
+    - unixodbc-dev
+    - msodbcsql17

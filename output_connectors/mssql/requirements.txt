@@ -1,0 +1,3 @@
+pyodbc==4.0.30
+SQLAlchemy==1.4.1
+ubiops-connector==1.0.2

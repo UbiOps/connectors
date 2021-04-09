@@ -21,6 +21,7 @@ The following output connectors are currently available:
 - Azure Blob Storage
 - Google Cloud BigQuery
 - Google Cloud Storage
+- Microsoft SQL server connector
 - MySQL
 - PostgreSQL
 
