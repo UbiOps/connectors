@@ -4,7 +4,7 @@ The UbiOps MSSQL output connector is based on the `sqlalchemy` and `pyodbc` pack
 
 ## Configuration
 
-The MSSQL output connector works with Python 3. 
+The MSSQL output connector works with **Python 3.8 only**.
 
 The connector should be set up as a deployment with structured input. Each of the input fields corresponds to a field
 in the database used for inserting. The output type does not matter, as no output is returned from the connector. 
