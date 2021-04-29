@@ -1,4 +1,4 @@
-# UbiOps Output Connector - Microsoft SQL server connector
+# UbiOps Output Connector - Microsoft SQL server
 
 The UbiOps MSSQL output connector is based on the `sqlalchemy` and `pyodbc` packages.
 
