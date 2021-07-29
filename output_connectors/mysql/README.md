@@ -1,6 +1,6 @@
 # UbiOps Output Connector - MySQL 
 
-The UbiOps MySQL output connector is based on the populair `mysqlclient` package and therefore supports inserting data
+The UbiOps MySQL output connector is based on the popular `mysqlclient` package and therefore supports inserting data
 to most major MySQL versions.
 
 

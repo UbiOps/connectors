@@ -2,7 +2,7 @@
 
 This repository contains a number of input and output connectors that can be used as UbiOps deployments. General
 information about connectors and their functionality can be found in the 
-[UbiOps documentation](https://ubiops.com/docs/connectors/).
+[UbiOps documentation](https://ubiops.com/docs/data-connections/connectors/).
  
 Many of the connectors are ready to be used immediately without further modification. For advanced use cases we
 encourage you to make your own copy of a connector and use it as a template to adapt it to your needs. This can for
@@ -32,3 +32,4 @@ The following output connectors are currently available:
 The following input connectors are currently available:
 
 - RabbitMQ
+- Snowflake

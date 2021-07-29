@@ -1,6 +1,6 @@
 # UbiOps Output Connector - PostgreSQL 
 
-The UbiOps PostgreSQL output connector is based on the populair `psycopg2` package and therefore supports inserting
+The UbiOps PostgreSQL output connector is based on the popular `psycopg2` package and therefore supports inserting
 data to most major PostgreSQL versions.
 
 

@@ -1,0 +1,2 @@
+snowflake-connector-python==2.3.7
+ubiops-connector==1.0.2
