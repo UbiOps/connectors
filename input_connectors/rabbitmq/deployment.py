@@ -63,7 +63,7 @@ class Deployment(InputConnector):
             dictionaries
         """
 
-        # Including the connect in the retrieve method such that it can benefit from retrying
+        # Include connect() in the retrieve method such that it can benefit from retrying
         if not self.connection:
             self.connect()
 
@@ -76,7 +76,7 @@ class Deployment(InputConnector):
                 method_frame, header_frame, body = channel.basic_get('input_connector')
             except pika.exceptions.AMQPError as e:
                 # If we already collected some messages that were acknowledged, we need to return those now.
-                # Otherwise these will be lost
+                # Otherwise, these will be lost
                 if len(data) > 0:
                     logger.warning(f"Failed to acknowledge message: {e}. Returning already collecting messages")
                     break
@@ -90,7 +90,7 @@ class Deployment(InputConnector):
                     channel.basic_ack(method_frame.delivery_tag)
                 except pika.exceptions.AMQPError as e:
                     # If we already collected some messages that were acknowledged, we need to return those now.
-                    # Otherwise these will be lost
+                    # Otherwise, these will be lost
                     if len(data) > 0:
                         logger.warning(f"Failed to acknowledge message: {e}. Returning already collecting messages")
                         break
@@ -99,7 +99,7 @@ class Deployment(InputConnector):
                     self.connection = None
                     raise RecoverableConnectorError(f"Failed to acknowledge message: {e}")
 
-                data.append(body.decode('utf-8'))
+                data.append({'message': body.decode('utf-8')})
 
             else:
                 # No more messages available, end the loop

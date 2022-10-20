@@ -4,6 +4,6 @@ apt:
   packages:
     - build-essential
     - python3-dev
-    - libpython3.7-dev
+    - libpython3.8-dev
     - libmysqlclient-dev
     - unixodbc-dev

@@ -55,7 +55,7 @@ class Deployment(InputConnector):
             dictionaries
         """
 
-        # Including the connect in the retrieve method such that it can benefit from retrying
+        # Include connect() in the retrieve method such that it can benefit from retrying
         if not self.connection:
             self.connect()
 

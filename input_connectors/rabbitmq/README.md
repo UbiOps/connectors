@@ -7,9 +7,9 @@ indicate that it was processed and to make sure it does not get collected again.
 
 ## Configuration
 
-The RabbitMQ input connector should be set up as a deployment with plain output, as each message is returned as
-a simple string. The input type does not matter, as no input is required for the connector. We recommend to allocate at
-least 512 MB of memory to the deployment.
+The RabbitMQ input connector should be set up as a deployment with structured output, with a single output field called
+`message` of type `string`. The input type does not matter, as no input is required for the connector. We recommend to
+allocate at least 512 MB of memory to the deployment.
 
 The connector can be configured using the following environment variables:
 

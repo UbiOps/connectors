@@ -6,8 +6,11 @@ your Snowflake database and returns the results of that query as structured outp
 
 ## Configuration
 
-The deployment should be set up with plain input or structured input without fields, as no data is given as input. It
-can be configured using a number of environment variables:
+The Snowflake input connector should be set up as a deployment with structured output, with the output fields matching
+the column names in Snowflake. The input type does not matter, as no input is required for the connector. We recommend
+to allocate at least 512 MB of memory to the deployment.
+
+The deployment can be configured using a number of environment variables:
 
 | Variable      | Default   | Description                                          |
 |---------------|---------- |------------------------------------------------------|

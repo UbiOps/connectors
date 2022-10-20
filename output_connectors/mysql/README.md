@@ -6,7 +6,7 @@ to most major MySQL versions.
 
 ## Configuration
 
-The MySQL output connector works with Python 3.6. Using a different version of Python requires changing `python3.6-dev`
+The MySQL output connector works with Python 3.8. Using a different version of Python requires changing `python3.8-dev`
 in ubiops.yaml to another version of Python.
 
 

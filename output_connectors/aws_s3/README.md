@@ -1,6 +1,6 @@
 # UbiOps Output Connector - Amazon Web Services S3 
 
-The UbiOps S3 output connector is based on on the AWS boto3 library. It inserts blobs to S3 storage, in this template 1 
+The UbiOps S3 output connector is based on the AWS Boto3 library. It inserts blobs to S3 storage, in this template 1
 blob per request.
 
 
